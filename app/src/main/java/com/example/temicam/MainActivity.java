@@ -207,7 +207,8 @@ public class MainActivity extends AppCompatActivity implements
                 trackSX[4].setVisibility(View.VISIBLE);
                 mRobot.turnBy(angle);
                 time += 1;
-                mRobot.tiltAngle(tilt_angle);
+                mRobot.tiltAngle(Math.max(tilt_angle, 25));
+
                 if(time>8){
                     track[5].setVisibility(View.VISIBLE);
                     time = 0;
@@ -215,7 +216,7 @@ public class MainActivity extends AppCompatActivity implements
             } else if (angle >= -25 && angle < -20) {
                 trackSX[4].setVisibility(View.VISIBLE);
                 time += 1;
-                mRobot.tiltAngle(tilt_angle);
+                mRobot.tiltAngle(Math.max(tilt_angle, 25));
                 if(time>8){
                     track[5].setVisibility(View.VISIBLE);
                     time = 0;
@@ -223,7 +224,7 @@ public class MainActivity extends AppCompatActivity implements
             } else if (angle >= -20 && angle < -15) {
                 trackSX[3].setVisibility(View.VISIBLE);
                 time += 1;
-                mRobot.tiltAngle(tilt_angle);
+                mRobot.tiltAngle(Math.max(tilt_angle, 25));
                 if(time>8){
                     track[5].setVisibility(View.VISIBLE);
                     time = 0;
@@ -231,7 +232,7 @@ public class MainActivity extends AppCompatActivity implements
             } else if (angle >= -15 && angle < -10) {
                 trackSX[2].setVisibility(View.VISIBLE);
                 time += 1;
-                mRobot.tiltAngle(tilt_angle);
+                mRobot.tiltAngle(Math.max(tilt_angle, 25));
                 if(time>8){
                     track[5].setVisibility(View.VISIBLE);
                     time = 0;
@@ -239,7 +240,7 @@ public class MainActivity extends AppCompatActivity implements
             } else if (angle >= -10 && angle < -5) {
                 trackSX[1].setVisibility(View.VISIBLE);
                 time += 1;
-                mRobot.tiltAngle(tilt_angle);
+                mRobot.tiltAngle(Math.max(tilt_angle, 25));
                 if(time>5){
                     track[5].setVisibility(View.VISIBLE);
                     time = 0;
@@ -247,7 +248,7 @@ public class MainActivity extends AppCompatActivity implements
             } else if (angle >= -5 && angle < 0) {
                 trackSX[0].setVisibility(View.VISIBLE);
                 time += 1;
-                mRobot.tiltAngle(tilt_angle);
+                mRobot.tiltAngle(Math.max(tilt_angle, 25));
                 if(time>8){
                     track[5].setVisibility(View.VISIBLE);
                     time = 0;
@@ -255,7 +256,7 @@ public class MainActivity extends AppCompatActivity implements
             } else if (angle >= 0 && angle < 5) {
                 track[0].setVisibility(View.VISIBLE);
                 time += 1;
-                mRobot.tiltAngle(tilt_angle);
+                mRobot.tiltAngle(Math.max(tilt_angle, 25));
                 if(time>8){
                     track[5].setVisibility(View.VISIBLE);
                     time = 0;
@@ -263,7 +264,7 @@ public class MainActivity extends AppCompatActivity implements
             } else if (angle >= 5 && angle < 10) {
                 track[1].setVisibility(View.VISIBLE);
                 time += 1;
-                mRobot.tiltAngle(tilt_angle);
+                mRobot.tiltAngle(Math.max(tilt_angle, 25));
                 if(time>8){
                     track[5].setVisibility(View.VISIBLE);
                     time = 0;
@@ -271,7 +272,7 @@ public class MainActivity extends AppCompatActivity implements
             } else if (angle >= 10 && angle < 15) {
                 track[2].setVisibility(View.VISIBLE);
                 time += 1;
-                mRobot.tiltAngle(tilt_angle);
+                mRobot.tiltAngle(Math.max(tilt_angle, 25));
                 if(time>8){
                     track[5].setVisibility(View.VISIBLE);
                     time = 0;
@@ -279,7 +280,7 @@ public class MainActivity extends AppCompatActivity implements
             } else if (angle >= 15 && angle < 20) {
                 track[3].setVisibility(View.VISIBLE);
                 time += 1;
-                mRobot.tiltAngle(tilt_angle);
+                mRobot.tiltAngle(Math.max(tilt_angle, 25));
                 if(time>8){
                     track[5].setVisibility(View.VISIBLE);
                     time = 0;
@@ -287,7 +288,7 @@ public class MainActivity extends AppCompatActivity implements
             } else if (angle >= 20 && angle < 25) {
                 track[4].setVisibility(View.VISIBLE);
                 time += 1;
-                mRobot.tiltAngle(tilt_angle);
+                mRobot.tiltAngle(Math.max(tilt_angle, 25));
                 if(time>8){
                     track[5].setVisibility(View.VISIBLE);
                     time = 0;
@@ -295,7 +296,7 @@ public class MainActivity extends AppCompatActivity implements
             } else if (angle >= 25) {
                 track[4].setVisibility(View.VISIBLE);
                 time += 1;
-                mRobot.tiltAngle(tilt_angle);
+                mRobot.tiltAngle(Math.max(tilt_angle, 25));
                 mRobot.turnBy(angle);
                 if(time>8){
                     track[5].setVisibility(View.VISIBLE);
