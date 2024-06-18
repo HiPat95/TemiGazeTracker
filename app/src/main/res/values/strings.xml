@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TemiCam</string>
+    <string name="TemiCam" />
+    <string name="gazeTracker" />
+</resources>
